@@ -1,0 +1,42 @@
+<html lang="en">
+    <head>
+        <title>Adam's Portfolio</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="blackjack.css"/>
+        <script src="blackjack.js"></script>
+    </head>
+    <body>
+        <h1>Black 21 Jack</h1>
+        <div id="blackjack">
+            <div id="hub">
+                <button onclick="reset()" id="reset" class="action">New Game</button>
+                <h2>Your Chips:</h2>
+                <div id="playerchips"></div>
+                <h1>Bet:</h1>
+                <input type="image" class = 'bet' onclick="bet(this, 5)" src="cards/5chip.png">
+                <input type="image" class = 'bet' onclick="bet(this, 10)" src="cards/10chip.png">
+                <input type="image" class = 'bet' onclick="bet(this, 25)" src="cards/25chip.png">
+                <input type="image" class = 'bet' onclick="bet(this, 50)" src="cards/50chip.png">
+                <div id="totalbet"></div>
+                <button onclick="start()" id="deal" class="action">Deal</button>
+                <button onclick="hit()" id="hit" class="action" >Hit</button>
+                <button onclick="stand()"id="stand" class="action">Stand</button>
+                <h1>Winner:</h1>
+                <div id='outcome'></div>
+            </div>
+            <div id="playfield">
+                <h1>Player</h1>
+                <h2>Score</h2>
+                <div id='playerscore'></div>                            
+                <div id='playerhand'></div>
+                    <h1>Dealer</h1>
+                    <h2>Score</h2>
+                <div id='dealerscore'></div>
+                <div id='dealerhand'></div>
+            </div>
+        </div>
+    </body>
+</html>

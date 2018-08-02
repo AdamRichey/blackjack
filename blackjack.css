@@ -1,0 +1,54 @@
+body{
+    background: linear-gradient(to right, black, #400001, black); 
+    color: white;
+    text-align: center;
+}
+#blackjack{
+    height: 80vh;
+    margin: 0vh 5vh 5vh 5vh;
+    padding: 5vh 5vh 5vh 5vh;
+    background: radial-gradient( #125c0c, #073004);
+    background-repeat:no-repeat;
+    color: white;
+}
+img{
+    height: 20vh;
+}
+#playerchips{
+    font-size:7vh;
+}
+#playfield{
+    display: inline-block;
+    text-align: center;
+    padding-left: 30%;
+}
+#hub{
+    vertical-align: top;
+    display: inline-block;
+}
+#hub input{
+    height: 7vh;
+}
+#hub input:hover{
+    opacity:.5;
+}
+#hub input:disabled{
+    height: 7vh;
+    opacity:.1;
+}
+.action{
+    display:inline-block;
+    padding:2em 2em;
+    margin-top: 2vh;
+    border-radius:2em;
+    box-sizing: border-box;
+    color:white;
+    background-color:black;
+    text-align:center;
+}
+.action:disabled{
+    opacity: .1;
+}
+#outcome{
+    font-size:3vh;
+}
